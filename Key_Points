@@ -1,0 +1,21 @@
+In convolutional neural network, kernel matrix spans over an image and moves in steps through pixels. Step size is called 'stride'
+Pixel area where operation is taking place - Receptive field
+Kernel acts as feature extractor and the resulting matrix after convolution is called 'feature map'. 
+Different kernels extracts different features, based on their weights/values.
+Depth of the kernel = depth of image ( eg, for rgb pictures, since there are 3 channels, there would be 3 kernels )
+For 2D image ( grayscale ) = kernel is 3 X 3
+For 3D image ( rgb ) = kernel is 3 X 3 X 3
+Activation function in CNN : ReLU - rectified linear unit
+Why sigmoid / tanh is not used -> vanishingg gradient / gradient too small; and in neural network, we depend on gradient to train the system better.
+Process of convolution layer :
+Image -> 'x' feature matrices -> convolved over the image gives 'x' stack of convoluted images -> ReLU activation function applied -> filtered images
+Pooling is used : ( Different types of pooling - max, sum, average )
+1)to avoid overfitting, 
+2)reduce no of parameters in image, 
+3)reduce computation in the network. 
+Max pooling provides scaled invariant representation of the image. ( meaning, it takes max value of the neighbourbood, so desired feature extraction is easier )
+Kernel in pooling layer is kept small so as not to loose weights of features.
+CNN in short :
+       Image -> ( Convolution -> pooling )^n -> Fully connected layer -> Output
+1st half -> responsible for feature extraction
+2nd half -> responsible for classfication.
