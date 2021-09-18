@@ -19,3 +19,29 @@ CNN in short :
        Image -> ( Convolution -> pooling )^n -> Fully connected layer -> Output
 1st half -> responsible for feature extraction
 2nd half -> responsible for classfication.
+
+
+
+
+
+
+
+
+
+
+
+Fundamentals of Self driving cars ( Udacity Course ):
+Some new terms and concepts -
+1) Frenet coordinates - the 2 axis in this system represents the road. Longitudinal axis - parallel to road, lateral axis - perpendicular to road.
+2) Lattice planning consists of 2 steps:
+       a) forming SL and ST trajectory ( ST - longitudinal vs time trajectory, SL - longitudinal vs lateral trajectory ie lateral offset wrt longitude)
+       b) combine these 2 trajectories
+3) 3 options for path planning on road - 
+       cruising ( accelertn = 0 , v is constant), 
+       following ( v and a - fixed, depending on lead vehicle ) and 
+       stop ( v and a = 0 )
+ 4) To control the vehicels, algo should be accurate, favourable to car and smooth. 3 options :
+       a) PID ( Proportional integral derivative control )
+       b) LQR ( Linear quadratic regulator ) ( equation looks like x` = Ax + Bu , u =[steering, throttle, break], x=[ lateral error, its @ of change, heading error or angle, its @ of change])
+       c) MPC ( Model predictive control)
+ 
