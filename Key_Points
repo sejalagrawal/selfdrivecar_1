@@ -20,6 +20,8 @@ CNN in short :
 1st half -> responsible for feature extraction
 2nd half -> responsible for classfication.
 
+Steps in Classifying road symbols:
+1) Preprocessing
 
 
 
