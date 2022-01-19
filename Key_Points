@@ -21,8 +21,11 @@ CNN in short :
 2nd half -> responsible for classfication.
 
 Steps in Classifying road symbols:
-1) Preprocessing
-
+1) Preprocessing 
+   i) Convert image to grayscale ( for identifying features like edges, curves, etc & reducing depth of the image)
+   ii) Histogram equalization : to bring the color intensity of the images in a equalized range
+   iii) Normalize data = bringing all pixel values in range 0-1 ( dividing by 255 )
+   
 
 
 
